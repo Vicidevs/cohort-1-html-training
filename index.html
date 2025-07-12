@@ -4,229 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trainee Portal - Welcome</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Arial", sans-serif;
-        line-height: 1.6;
-        color: #333;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        min-height: 100vh;
-      }
-
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-
-      header {
-        background: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(10px);
-        border-radius: 15px;
-        padding: 20px;
-        margin-bottom: 30px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-      }
-
-      .header-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-      }
-
-      .logo {
-        font-size: 24px;
-        font-weight: bold;
-        color: #667eea;
-      }
-
-      nav ul {
-        list-style: none;
-        display: flex;
-        gap: 30px;
-      }
-
-      nav a {
-        text-decoration: none;
-        color: #333;
-        font-weight: 500;
-        transition: color 0.3s ease;
-      }
-
-      nav a:hover {
-        color: #667eea;
-      }
-
-      .hero {
-        background: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(10px);
-        border-radius: 20px;
-        padding: 60px 40px;
-        text-align: center;
-        margin-bottom: 40px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-      }
-
-      .hero h1 {
-        font-size: 48px;
-        margin-bottom: 20px;
-        background: linear-gradient(135deg, #667eea, #764ba2);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-
-      .hero p {
-        font-size: 20px;
-        color: #666;
-        margin-bottom: 30px;
-      }
-
-      .cta-button {
-        display: inline-block;
-        background: linear-gradient(135deg, #667eea, #764ba2);
-        color: white;
-        padding: 15px 30px;
-        border-radius: 50px;
-        text-decoration: none;
-        font-weight: bold;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-
-      .cta-button:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
-      }
-
-      .cards-section {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
-        margin-bottom: 40px;
-      }
-
-      .card {
-        background: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(10px);
-        border-radius: 15px;
-        padding: 30px;
-        text-align: center;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
-      }
-
-      .card:hover {
-        transform: translateY(-5px);
-      }
-
-      .card-icon {
-        font-size: 48px;
-        margin-bottom: 20px;
-        color: #667eea;
-      }
-
-      .card h3 {
-        font-size: 24px;
-        margin-bottom: 15px;
-        color: #333;
-      }
-
-      .card p {
-        color: #666;
-        margin-bottom: 20px;
-      }
-
-      .card-link {
-        color: #667eea;
-        text-decoration: none;
-        font-weight: bold;
-        transition: color 0.3s ease;
-      }
-
-      .card-link:hover {
-        color: #764ba2;
-      }
-
-      .announcements {
-        background: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(10px);
-        border-radius: 15px;
-        padding: 30px;
-        margin-bottom: 40px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-      }
-
-      .announcements h2 {
-        color: #333;
-        margin-bottom: 20px;
-        font-size: 28px;
-      }
-
-      .announcement-item {
-        border-left: 4px solid #667eea;
-        padding-left: 20px;
-        margin-bottom: 20px;
-      }
-
-      .announcement-item h4 {
-        color: #333;
-        margin-bottom: 5px;
-      }
-
-      .announcement-item p {
-        color: #666;
-      }
-
-      .announcement-date {
-        color: #999;
-        font-size: 14px;
-      }
-
-      footer {
-        background: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(10px);
-        border-radius: 15px;
-        padding: 30px;
-        text-align: center;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-      }
-
-      footer p {
-        color: #666;
-      }
-
-      @media (max-width: 768px) {
-        .header-content {
-          flex-direction: column;
-          gap: 20px;
-        }
-
-        nav ul {
-          flex-direction: column;
-          gap: 15px;
-          text-align: center;
-        }
-
-        .hero h1 {
-          font-size: 36px;
-        }
-
-        .hero p {
-          font-size: 18px;
-        }
-
-        .hero {
-          padding: 40px 20px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="./training.css">
+ 
   </head>
   <body>
     <div class="container">
@@ -255,86 +34,31 @@
       </section>
 
       <!-- Replace with input form section -->
-      <section class="cards-section">
-        <div class="card">
-          <div class="card-icon">📚</div>
-          <h3>My Courses</h3>
-          <p><input type="text" placeholder="Search for courses..." /></p>
-          <a href="#courses" class="card-link">View Courses →</a>
-        </div>
+         <h2>Contact Us</h2>
 
-        <div class="card">
-          <div class="card-icon">📅</div>
-          <h3>Schedule</h3>
-          <p>
-            Check your training schedule, upcoming sessions, and important
-            deadlines.
-          </p>
-          <a href="#schedule" class="card-link">View Schedule →</a>
-        </div>
+  <form action="/submit" method="post">
 
-        <div class="card">
-          <div class="card-icon">👥</div>
-          <h3>Mentorship</h3>
-          <p>
-            Connect with your assigned mentor and book one-on-one guidance
-            sessions.
-          </p>
-          <a href="#mentorship" class="card-link">Connect →</a>
-        </div>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
 
-        <div class="card">
-          <div class="card-icon">📊</div>
-          <h3>Progress Tracking</h3>
-          <p>Monitor your learning progress and view performance analytics.</p>
-          <a href="#progress" class="card-link">View Progress →</a>
-        </div>
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" required><br><br>
 
-        <div class="card">
-          <div class="card-icon">💬</div>
-          <h3>Discussion Forums</h3>
-          <p>Join discussions with fellow trainees and share knowledge.</p>
-          <a href="#forums" class="card-link">Join Discussion →</a>
-        </div>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
 
-        <div class="card">
-          <div class="card-icon">🎯</div>
-          <h3>Assessments</h3>
-          <p>Take quizzes and assessments to test your knowledge and skills.</p>
-          <a href="#assessments" class="card-link">Take Assessment →</a>
-        </div>
-      </section>
-      <!-- End Here -->
-      <section class="announcements">
-        <h2>Recent Announcements</h2>
+    <label for="password">Password:</label><br>
+    <input type="text" id="password" name="password" required><br><br>
 
-        <div class="announcement-item">
-          <h4>New Training Module Available</h4>
-          <p>
-            The Advanced Communication Skills module is now available in your
-            course library.
-          </p>
-          <span class="announcement-date">Posted 2 days ago</span>
-        </div>
+    <label for="phone_number">Phone Number:</label><br>
+    <input type="phone_number" id="phone_number" name="phone_number" required><br><br>
 
-        <div class="announcement-item">
-          <h4>Upcoming Workshop</h4>
-          <p>
-            Join us for a hands-on workshop on Project Management fundamentals
-            this Friday.
-          </p>
-          <span class="announcement-date">Posted 1 week ago</span>
-        </div>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" cols="30" required></textarea><br>
 
-        <div class="announcement-item">
-          <h4>System Maintenance</h4>
-          <p>
-            The learning platform will undergo scheduled maintenance this Sunday
-            from 2-4 AM.
-          </p>
-          <span class="announcement-date">Posted 1 week ago</span>
-        </div>
-      </section>
+    <input type="submit" value="Send">
+  </form>
+        
 
       <footer>
         <p>
